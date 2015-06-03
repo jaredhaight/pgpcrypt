@@ -13,3 +13,9 @@ This is a real simple script I wrote to make sending encrypted messages to peopl
 * If you don't, searches a key server to see if the email address has published keys
 * Prompts you to download a public key (if found)
 * Signs and encrypts the message.
+
+## TODO
+
+* Better error handling
+* Optionally dump output to file
+
