@@ -2,7 +2,7 @@
 
 if [ -z "$2" ]
   then 
-    echo [!] Command usage: pgpcrypt.sh dest_user_email_address message_in_quotes
+    echo "[!] Command usage: $0 <dest_user_email_address> <message_in_quotes>"
     exit
 fi
 
@@ -10,7 +10,7 @@ fi
 gpg --list-public-keys $1 > /dev/null 2>&1
 
 if [ $? -ne 0 ]
- then
+  then
     gpg --search-keys $1
     gpg --list-public-keys $1 > /dev/null 2>&1
     if [ $? -ne 0 ]
